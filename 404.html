@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=https://cleck.io">
-    <script type="text/javascript">
-        window.location.href = "https://cleck.io";
-    </script>
+    <meta http-equiv="refresh" content="5; url=https://cleck.io">
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-42N129EKC7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-42N129EKC7');
-</script>
-
 <body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-42N129EKC7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-42N129EKC7');
+
+        // Delaying the redirection to ensure GTM script runs
+        setTimeout(function() {
+            window.location.href = "https://cleck.io";
+        }, 5000); // 5 seconds delay
+    </script>
+    
     <p>If you are not redirected automatically, follow this <a href="https://cleck.io">link to cleck.io</a>.</p>
 </body>
 </html>
